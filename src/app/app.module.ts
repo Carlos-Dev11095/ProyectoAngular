@@ -6,13 +6,15 @@ import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { AppRoutingModule } from './app-routing.module';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NosotrosComponent,
     ContactoComponent,
-    InicioComponent
+    InicioComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

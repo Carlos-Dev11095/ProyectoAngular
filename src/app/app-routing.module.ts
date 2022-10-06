@@ -9,6 +9,10 @@ const rutas: Routes = [
   {path: 'inicio', component: InicioComponent},
   {path: 'nosotros', component:NosotrosComponent},
   {path: 'contacto', component:ContactoComponent},
+
+  {path: 'mensajes',loadChildren:()=>import('./pages/mensajes/mensajes.module').then(m=>m.MensajesModule)},
+  {path: 'ofertas',loadChildren:()=>import('./pages/ofertas/ofertas.module').then(m=>m.OfertasModule)},
+
   {path: '**', redirectTo: 'inicio'}
 
 ];
