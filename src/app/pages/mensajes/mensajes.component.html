@@ -1,1 +1,8 @@
-<p>mensajes works!</p>
+<p>mensajes Funciona!</p>
+
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let mensaje of mensajes | async">
+        <h2>{{mensaje.title}}</h2>
+        <p>{{mensaje.body}}</p>
+    </li>
+</ul>

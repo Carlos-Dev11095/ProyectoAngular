@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OfertasService } from '../../services/ofertas.service';
 
 @Component({
   selector: 'app-ofertas',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ofertas.component.css']
 })
 export class OfertasComponent implements OnInit {
-
-  constructor() { }
+// ofertas: any[]=[];
+ofertas:any;
+  constructor(private ofertasService: OfertasService) { }
 
   ngOnInit(): void {
+    this.ofertas=this.ofertasService.getOfertas()
+  
   }
-
 }

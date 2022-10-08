@@ -1,1 +1,8 @@
 <p>ofertas works!</p>
+
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let oferta of ofertas | async">
+        <h2>{{oferta.title}}</h2>
+        <p>{{oferta.body}}</p>
+    </li>
+</ul>

@@ -7,6 +7,7 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MenuComponent } from './components/menu/menu.component';
+import {HttpClientModule}from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { MenuComponent } from './components/menu/menu.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
